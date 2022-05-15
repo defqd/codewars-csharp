@@ -27,4 +27,3 @@ namespace CodeWarsTests._8_kyu
           Math.Round(DecibelScale.DbScale(intensity), MidpointRounding.AwayFromZero);
     }
 }
-}
