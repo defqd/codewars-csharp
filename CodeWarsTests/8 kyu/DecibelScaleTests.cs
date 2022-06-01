@@ -26,4 +26,5 @@ namespace CodeWarsTests._8_kyu
         public double Test(double intensity) =>
           Math.Round(DecibelScale.DbScale(intensity), MidpointRounding.AwayFromZero);
     }
+
 }
