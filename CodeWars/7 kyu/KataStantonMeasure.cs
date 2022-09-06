@@ -19,27 +19,32 @@ namespace CodeWars._7_kyu
 {
     public class KataStantonMeasure
     {
-        public static int StantonMeasure(int[] arr)
-        {
-            int n = 0;
-            int count = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == 1)
-                {
-                    n++;
-                }
-            }
-            for (int j = 0; j < arr.Length; j++)
-            {
-                if (arr[j] == n)
-                {
-                    count++;
-                }
-            }
-            
-            return count;
-        }
-    }
-    
+        public static int StantonMeasure(int[] arr) => arr.Count(s => s == arr.Count(i => i == 1));
+
+        //public static int StantonMeasure(int[] arr)
+        //{
+
+        //    int counter = arr.Count(i => i == 1);
+        //    return arr.Count(j => j == counter);
+
+        //    int n = 0;
+        //    int count = 0;
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        if (arr[i] == 1)
+        //        {
+        //            n++;
+        //        }
+        //    }
+        //    for (int j = 0; j < arr.Length; j++)
+        //    {
+        //        if (arr[j] == n)
+        //        {
+        //            count++;
+        //        }
+        //    }
+
+        //    return count;
+        //}
+    }   
 }
