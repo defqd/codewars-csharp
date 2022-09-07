@@ -21,6 +21,4 @@ namespace CodeWars._7_kyu
             return url.Split('#')[0];
         }
     }
-      
-
 }
